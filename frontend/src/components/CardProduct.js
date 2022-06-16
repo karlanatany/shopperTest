@@ -1,12 +1,13 @@
 import { Flex, Text } from "@chakra-ui/react";
 import { ContainerOptions } from "./ContainerOptions.js";
-import {ButtonComponent} from "./ButtonComponent.js"
+import { ButtonComponent } from "./ButtonComponent.js"
 import { useContext } from "react";
 import GlobalStateContext from "../global/GlobalStateContext.js";
+
 export const CardProduct = (props) => {
   const { setters } = useContext(GlobalStateContext)
-  const {addToCart} = setters
-  const {product} = props
+  const { addToCart } = setters
+  const { product } = props
 
   return (
     <Flex
@@ -19,7 +20,7 @@ export const CardProduct = (props) => {
       p={5}
       shadow='md'
     >
-      
+
       <Text fontSize={15} fontWeight={'bold'} colorScheme='purple'> {product.name} </Text>
       <Flex w='100%' justify='center'>
         <ContainerOptions
@@ -32,8 +33,9 @@ export const CardProduct = (props) => {
         />
       </Flex>
       <ButtonComponent
-      text='Comprar'
-      onClick={() => addToCart(product)}/>
+        text='Comprar'
+        onClick={() => addToCart(product)}
+      />
     </Flex>
   )
 

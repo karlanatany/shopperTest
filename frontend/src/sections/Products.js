@@ -33,9 +33,10 @@ export const Products = () => {
         htmlSize={10} width='auto'
         placeholder='Buscar produto'
         value={query}
-        onChange={onChangeQuery} 
-        m={5}/>
-
+        onChange={onChangeQuery}
+        m={5}
+        mt={20}
+      />
 
       <Flex flexDir={'row'} flexWrap={'wrap'} rowGap={8} justifyContent='center'>
         {productsList}

@@ -6,7 +6,7 @@ import {
   NumberInputField,
   NumberInputStepper,
   NumberIncrementStepper,
-  NumberDecrementStepper,
+  NumberDecrementStepper
 } from '@chakra-ui/react'
 
 export const ContainerCart = styled.div` 
@@ -60,8 +60,12 @@ export const CartItem = (props) => {
         </BoxOptions>
         <BoxOptions>
           <p> Quantidade</p>
-          <NumberInput maxW='100px' value={props.qty} size='sm'>
-          <NumberInputField  />
+          <p>R$ {props.qty}</p>
+        </BoxOptions>
+        <BoxOptions>
+          <p> Quantidade</p>
+          <NumberInput  min={0} maxW='100px'  size='sm' value={props.qty}>
+          <NumberInputField/>
           <NumberInputStepper>
             <NumberIncrementStepper onClick={() => addToCart(props)}/>
             <NumberDecrementStepper onClick={() => removeFromCart(props)}/>

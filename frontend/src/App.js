@@ -7,7 +7,7 @@ function App() {
   return (
     <GlobalState>
       <Flex flexDir={'column'} w={'100wh'} h={'100vh'} alignItems='center'>
-      <Header/>
+      <Header text='Shoppercommerce'/>
         <Products />
       </Flex>
     </GlobalState>

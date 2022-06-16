@@ -37,13 +37,13 @@ export const ModalFinalyPurchase = () => {
           dateWithdrawal: values.date,
           products: productsCart
         }
+
         axios
           .post('http://localhost:3030/orders', body)
           .then(async () => {
             await alertSuccess(`${values.name} sua compra foi realizada com sucesso.`)
             resolve()
           }, 3000)
-          // .catch(err => console.log('algo deu errao'))
           .catch(err => {
             alertError(err, "Algo deu errado ao enviar seu pedido!")
           })
@@ -74,10 +74,7 @@ export const ModalFinalyPurchase = () => {
                   placeholder='Nome e sobrenome'
                   type="text"
                   ref={initialRef}
-                  {...register("name", {
-                    required: "This is required",
-                    minLength: { value: 4, message: "Minimum length should be 4" }
-                  })}
+                  {...register("name")}
                 />
               </FormControl>
               <FormControl mt={4}>
@@ -86,9 +83,7 @@ export const ModalFinalyPurchase = () => {
                   id="date"
                   type="date"
                   placeholder='dd/mm/aaaa'
-                  {...register("date", {
-                    required: "This is required"
-                  })}
+                  {...register("date")}
                 />
               </FormControl>
               <ModalFooter>
