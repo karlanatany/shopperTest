@@ -19,9 +19,9 @@
 Ter instalado na máquina o mysql, node.js e git.
  ________________________
 **RODANDO O BACKEND:**
-Clone o repositório, disponibilizado exclusivamente para construção deste projeto Front-End:
+Clone o repositório, disponibilizado para construção deste projeto Front-End:
 
-    $ git clone https://github.com/karlanatany/shopperApp.git
+    $ git clone https://github.com/karlanatany/shopperTest.git
 
 Acesse a pasta do projeto no terminal/cmd:
 
@@ -69,3 +69,4 @@ Instale as dependências:
 Starte o projeto:
 
     $ npm start
+
