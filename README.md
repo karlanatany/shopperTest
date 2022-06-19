@@ -25,7 +25,7 @@ Clone o repositório, disponibilizado para construção deste projeto Front-End:
 
 Acesse a pasta do projeto no terminal/cmd:
 
-    $ cd shopperApp
+    $ cd shopperTest
     $ cd backend
 
 Acesse o projeto via VSCode:
@@ -41,11 +41,12 @@ No terminal do Vs Code, instale as dependências do backend:
 
     $ npm install
 
+Crie um novo arquivo ***.env*** para inserir as informações referente à conexão ao banco de dados, temos um arquivo ***.env-example*** que pode ser usado como base para estas configurações.
+
 Crie as tabelas:
 
     $ npm run migrations
    
- Crie um novo arquivo ***.env*** para inserir as informações referente à conexão ao banco de dados, temos um arquivo ***.env-example*** que pode ser usado como base para estas configurações.
 
 Execute o script start:
 
@@ -56,8 +57,8 @@ ___
 **RODANDO O FRONTEND:**
 Acesse a pasta do projeto no terminal/cmd:
 
-    $ cd shopperApp
-    $ cd backend
+    $ cd shopperTest
+    $ cd frontend
 
 Acesse o projeto via VSCode:
 
