@@ -18,4 +18,3 @@ export const connection = knex({
 // port : 3306,
 // user : 'root',
 // database : 'shopper',
-// password: 'natany19'
